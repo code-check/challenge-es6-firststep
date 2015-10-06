@@ -45,8 +45,7 @@ Circle
 Complete [cipher.js](es6/src/cipher.js) to pass [test](es6/test/cipher.spec.js)
 
 ### Specification
-- Allowed characters are "abcdefghijklmnopqrstuvwxyz1234567890". 
-- Character sequence is same as above.
+- Allowed characters are "abcdefghijklmnopqrstuvwxyz". 
 - If not allowed character is present in input parameter, its character is not converted and included in result string.
 
 ### Q4 extra
@@ -55,3 +54,11 @@ Each characters converted to same as lowercase.
 
 
 ## Q5. Simple substitution cipher
+[Substitution cipher](https://en.wikipedia.org/wiki/Substitution_cipher) is another simple algorithm which makes encrypted text.
+
+Complete [cipher.js](es6/src/cipher.js) to pass [test](es6/test/cipher.spec.js)
+
+### Specification
+- Allowed characters are "abcdefghijklmnopqrstuvwxyz". 
+- Converted to           "zebrascdfghijklmnopqtuvwxy".
+- If not allowed character is present in input parameter, its character is not converted and included in result string.
