@@ -1,4 +1,3 @@
-//Abstract super class Polygon
 export class Cipher {
 
   encrypt(str) { return str;}
