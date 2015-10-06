@@ -1,0 +1,3 @@
+build:
+  - grunt
+test: mocha

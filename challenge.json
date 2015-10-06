@@ -1,0 +1,5 @@
+{
+  "editable": ["es6/src/*"],
+  "excludes": ["es6/test/*_extra.js"],
+  "test": "mocha"
+}
