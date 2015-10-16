@@ -1,7 +1,7 @@
 import fs from "fs";
 import {Tokenizer} from "./tokenizer";
 import {assert} from 'chai';
-import {CaesarCipher, SimpleSubstitutionCipher} from '../target/cipher';
+import {CaesarCipher} from '../target/cipher';
 
 describe("Q4", () => {
 
@@ -32,21 +32,6 @@ describe("Q4", () => {
   it("not use `for`", () => {
     var str = fs.readFileSync("es6/src/cipher.js", "utf-8");
     assert.notOk(new Tokenizer().split(str).some(v => v === "for"));
-  });
-});
-
-describe("Q5", () => {
-
-  it("test1", () => {
-    const cipher = new SimpleSubstitutionCipher();
-    var ret = cipher.encrypt("hello world!");
-    assert.equal(ret , "daiil vloir!");
-  });
-
-  it("test2", () => {
-    const cipher = new SimpleSubstitutionCipher();
-    var ret = cipher.decrypt("daiil vloir!");
-    assert.equal(ret , "hello world!");
   });
 });
 

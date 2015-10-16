@@ -18,6 +18,21 @@ export class Rectangle extends Polygon {
   get area() { return this.height * this.width;}
 }
 
+//BEGIN_CHALLENGE
+/*
+//END_CHALLENGE
+export class Square {
+  
+}
+
+export class Circle {
+  
+}
+//BEGIN_CHALLENGE
+*/
+//END_CHALLENGE
+
+//BEGIN_CHALLENGE
 export class Square extends Rectangle {
 
   constructor(height) {
@@ -36,4 +51,5 @@ export class Circle extends Polygon {
 
   get area() { return Math.PI * this.r * this.r;}
 }
+//END_CHALLENGE
 
