@@ -12,4 +12,9 @@ describe("Q2", () => {
     var ret = new Person("Cody").hello();
     assert.equal(ret, "Hello! My name is Cody");
   });
+
+  it("test3", () => {
+    var ret = new Person().hello();
+    assert.equal(ret, "Hello! My name is undefined");
+  });
 });
