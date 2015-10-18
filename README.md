@@ -39,7 +39,18 @@ Circle
 - The width of Circle is radius * 2.
 
 
-## Q4. Caesar cipher
+## Q4. Promise
+
+Complete [promise.js](es6/src/promise.js) to pass [test](es6/test/promise.spec.js)
+
+### Specification
+- sleep function returns Promise. Its value is specified time.
+- sleep function finish asynchronously after specified time.
+- if specified time is less than 0, the Promise rejected.
+- You can use setTimeout in sleep function.
+
+
+## Q5. Caesar cipher
 [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) is a simple algorithm which makes encrypted text.
 
 Complete [cipher.js](es6/src/cipher.js) to pass [test](es6/test/cipher.spec.js)
@@ -52,18 +63,8 @@ Complete [cipher.js](es6/src/cipher.js) to pass [test](es6/test/cipher.spec.js)
 You MUST NOT use `for` statement.
 If you are using `for` test fails.
 
-### Q4 extra
+### Q5 extra
 Support uppercase in your implementation.  
 Each characters converted to same as lowercase.
 
-
-## Q5. Promise
-
-Complete [promise.js](es6/src/promise.js) to pass [test](es6/test/promise.spec.js)
-
-### Specification
-- sleep function returns Promise. Its value is specified time.
-- sleep function finish asynchronously after specified time.
-- if specified time is less than 0, the Promise rejected.
-- You can use setTimeout in sleep function.
 

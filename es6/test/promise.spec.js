@@ -1,7 +1,7 @@
 import {assert} from 'chai';
 import {sleep} from '../target/promise';
 
-describe("Q5", function() {
+describe("Q4", function() {
   this.timeout(2000);
 
   it("with valid time.(1000)", (done) => {
