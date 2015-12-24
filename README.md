@@ -1,70 +1,81 @@
-# First step of ES6
+# ECMAScript 2015(ES6) Challenge
 
-Learn ES6 by answering easy challenge!
+## まずはじめに
 
-## Q1. Hello world.
+この問題のゴールは、簡単な実装をECMAScript 2015(ES6)を用いて実装することで、ES6の理解を深める事です。
 
-Fix [hello.js](es6/src/hello.js) to pass [test](es6/test/hello.spec.js)
+実装する機能の詳細スペックは既に'api-first-spec'を用いて定義されています。（testフォルダ内をご確認ください）  
+正しく問題を回答するため、それぞれの問題のSpecを読みながら回答してみてください。  
+例えば、Step1の詳細は、[es6/test/hello.spec.js](es6/test/hello.spec.js)に記載されています。  
 
+- 悩んだことやメモ
+- 回答した内容がどのように動くか、どのような実装をしたか
+- 工夫したところやSpecの改善提案
+等、表現したいことがございましたら、[Comments.md](Comments.md)にご自由にお書きください。
 
-## Q2. Class.
+## Step1. Hello worldを実装してみましょう
 
-Fix [person.js](es6/src/person.js) to pass [test](es6/test/person.spec.js)
+[hello.js](es6/src/hello.js)を編集して、HelloWorldを実装してください。  
+[test](es6/test/hello.spec.js)を読んで、正しく仕様を満たすものを実装してください。
 
+## Step2. クラスを実装してみましょう
 
-## Q3. Inheritance
+[person.js](es6/src/person.js)を編集して、HelloWorldを実装してください。  
+[test](es6/test/person.spec.js)を読んで、正しく仕様を満たすものを実装してください。
 
-Polygon is a class which means a simple shape.  
-It can calc its area size.
+## Step3. クラスの継承を実装してみましょう
 
-It has following subclasses
+Polygonはある多角形の面積を計算してくれるシンプルなクラスです。
+また、以下のサブクラスをもっています。  
 
 - Rectangle
 - Square
 - Circle
 
-Now Square and Circle class are not implemented yet.
+現在、SquareとCircleクラスは実装されていません。  
+継承を活用して、[polygon.js](es6/src/polygon.js)を完成させてください。  
+[test](es6/test/polygon.spec.js)を読んで、正しく仕様を満たすものを実装してください。
 
-
-Complete [polygon.js](es6/src/polygon.js) to pass [test](es6/test/polygon.spec.js)
-
-### Specification
+### それぞれの詳細の仕様
+それぞれのクラスは以下の仕様を満たします。
 
 Square
-- Its constructor parameter is 1 number. It means a side length.
+- 横幅を表すコンストラクターの値は1です。
 
 Circle
-- Its constructor parameter is 1 number. It means a radius.
-- The height of Circle is radius * 2.
-- The width of Circle is radius * 2.
+- 円の半径を表すコンストラクターの値は1です。
+- 円の高さ(height)は半径*2です。
+- 円の長さ(width)は半径*2です。
 
 
-## Q4. Promise
+## Q4. Step4. Promise(非同期処理)を利用しよう
+Promiseとは、非同期処理を抽象化したオブジェクトとそれを操作する仕組みのことです。  
+複雑な非同期処理等をうまくパターン化できるというのがPromiseの役割です。
 
-Complete [promise.js](es6/src/promise.js) to pass [test](es6/test/promise.spec.js)
+Promiseを活用した[promise.js](es6/src/promise.js)を完成させてください。  
+[test](es6/test/promise.spec.js)を読んで、正しく仕様を満たすものを実装してください。
 
-### Specification
-- sleep function returns Promise. Its value is specified time.
-- sleep function finish asynchronously after specified time.
-- if specified time is less than 0, the Promise rejected.
-- You can use setTimeout in sleep function.
+### 詳細の仕様
+- sleep functionは特定の時間の値をもったPromiseを返します。  
+- sleep functionは時間を特定すると非同期で終了します。
+- もし、特定された時間が0よりも少ない場合、Promiseはリジェクトされます。
+- sleep function内ではsetTimeを活用することが出来ます。
 
+## Step5. Caesar cipher(シーザー暗号)を利用しよう
+[Caesar cipher(シーザー暗号)](https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%BC%E3%82%B6%E3%83%BC%E6%9A%97%E5%8F%B7)とは、単一換字式暗号の一種で、平文の各文字を辞書順に3文字だけシフトして暗号文をつくる暗号アルゴリズムです。  
 
-## Q5. Caesar cipher
-[Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) is a simple algorithm which makes encrypted text.
+Caesar cipherを活用した[cipher.js](es6/src/cipher.js)を完成させてください。  
+[test](es6/test/cipher.spec.js)を読んで、正しく仕様を満たすものを実装してください。
 
-Complete [cipher.js](es6/src/cipher.js) to pass [test](es6/test/cipher.spec.js)
+### 詳細の仕様
+- 利用できる文字列は"abcdefghijklmnopqrstuvwxyz"です。
+- もし、利用できない文字列が入力された場合、その文字列は変換されずにそのままの値で結果の文字列に返されます。
 
-### Specification
-- Allowed characters are "abcdefghijklmnopqrstuvwxyz". 
-- If not allowed character is present in input parameter, its character is not converted and included in result string.
+### 制約条件
+- for文は利用出来ません。
+- もしfor文を利用した場合は、テストは通過できません。
 
-### Restriction
-You MUST NOT use `for` statement.
-If you are using `for` test fails.
-
-### Q5 extra
-Support uppercase in your implementation.  
-Each characters converted to same as lowercase.
-
-
+### Step5. 大文字に対応させてみよう(応用問題)
+Step4で実装してきたものを大文字に対応させてみましょう。  
+それぞれの文字は小文字と同様とみなされて変換されます。  
+[test](es6/test/cipher_extra.spec.js)を読んで、正しく仕様を満たすものを実装してください。
