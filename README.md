@@ -1,5 +1,7 @@
 # First step of ES6
 
+[![Join the chat at https://gitter.im/code-check/challenge-es6-firststep](https://badges.gitter.im/code-check/challenge-es6-firststep.svg)](https://gitter.im/code-check/challenge-es6-firststep?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Learn ES6 by answering easy challenge!
 
 ## Q1. Hello world.
