@@ -5,6 +5,7 @@
   "test": "mocha",
   "tags": [
     "JavaScript",
-    "ES6"
+    "ES6",
+    "Algorithm"
   ]
 }
