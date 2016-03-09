@@ -5,12 +5,12 @@ You can find more details in [official document](http://www.ecma-international.o
 This is a basic challenge to learn ES6 by implementing simple features!
 
 
-## Step1, Hello world.
+## Step1, Hello world
 
 Fix [hello.js](es6/src/hello.js) to pass [test](es6/test/hello.spec.js)
 
 
-## Step2, Class.
+## Step2, Class
 
 Fix [person.js](es6/src/person.js) to pass [test](es6/test/person.spec.js)
 
