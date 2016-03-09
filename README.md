@@ -1,30 +1,30 @@
-# First step of ES6
+# Information
+ECMAScript 6, also known as ECMAScript 2015, is the latest version of the ECMAScript standard. ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is underway now.
+You can find more details in [official document](http://www.ecma-international.org/ecma-262/6.0/ECMA-262.pdf)
 
-Learn ES6 by answering easy challenge!
+This is a basic challenge to learn ES6 by implementing simple features!
 
-## Q1. Hello world.
+
+## Step1, Hello world.
 
 Fix [hello.js](es6/src/hello.js) to pass [test](es6/test/hello.spec.js)
 
 
-## Q2. Class.
+## Step2, Class.
 
 Fix [person.js](es6/src/person.js) to pass [test](es6/test/person.spec.js)
 
 
-## Q3. Inheritance
+## Step3, Inheritance
 
 Polygon is a class which means a simple shape.  
-It can calc its area size.
-
-It has following subclasses
+It can calculate its area size and has following subclasses
 
 - Rectangle
 - Square
 - Circle
 
 Now Square and Circle class are not implemented yet.
-
 
 Complete [polygon.js](es6/src/polygon.js) to pass [test](es6/test/polygon.spec.js)
 
@@ -39,7 +39,7 @@ Circle
 - The width of Circle is radius * 2.
 
 
-## Q4. Promise
+## Step4, Promise
 
 Complete [promise.js](es6/src/promise.js) to pass [test](es6/test/promise.spec.js)
 
@@ -50,7 +50,7 @@ Complete [promise.js](es6/src/promise.js) to pass [test](es6/test/promise.spec.j
 - You can use setTimeout in sleep function.
 
 
-## Q5. Caesar cipher
+## Step5, Caesar cipher
 [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) is a simple algorithm which makes encrypted text.
 
 Complete [cipher.js](es6/src/cipher.js) to pass [test](es6/test/cipher.spec.js)
@@ -63,8 +63,6 @@ Complete [cipher.js](es6/src/cipher.js) to pass [test](es6/test/cipher.spec.js)
 You MUST NOT use `for` statement.
 If you are using `for` test fails.
 
-### Q5 extra
+### Notes
 Support uppercase in your implementation.  
 Each characters converted to same as lowercase.
-
-
