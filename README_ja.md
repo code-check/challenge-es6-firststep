@@ -3,6 +3,10 @@
 
 この問題のゴールは、簡単な実装をECMAScript 2015(ES6)を用いて実装することで、ES6の理解を深める事です。
 
+正しく問題を回答するため、それぞれの問題のSpecを読みながら回答してみてください。  
+例えば、Step1の詳細は、es6/test/hello.spec.jsに記載されています。
+
+
 ## Step1. Hello worldを実装してみましょう
 
 hello.jsを編集して、HelloWorldを実装してください。  
