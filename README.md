@@ -66,3 +66,26 @@ If you are using `for` test fails.
 ### Notes
 Support uppercase in your implementation.  
 Each characters converted to same as lowercase.
+
+### Test Results *before* solving the challenge  
+```
+codecheck: Finish with code 9
+codecheck: tests  : 16
+codecheck: success: 7
+codecheck: failure: 9
+```
+
+### Test Results *after* solving the challenge
+```
+codecheck: Finish with code 0
+codecheck: tests  : 16
+codecheck: success: 16
+codecheck: failure: 0
+```
+--- --- ---
+## Run Tests
+To run tests locally install `codecheck` by running the following command in terminal.
+```
+$ npm install codecheck -g
+```
+To run tests in web editor please click in `RUN` button on left side of web editor.
