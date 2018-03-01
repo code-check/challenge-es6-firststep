@@ -1,7 +1,7 @@
 import {assert} from 'chai';
 import {hello} from '../target/hello';
 
-describe("Q1", () => {
+describe("STEP1", () => {
 
   it("test1", () => {
     var ret = hello("world");
