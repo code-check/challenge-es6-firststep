@@ -3,7 +3,7 @@ import {Tokenizer} from "./tokenizer";
 import {assert} from 'chai';
 import {CaesarCipher} from '../target/cipher';
 
-describe("Q5", () => {
+describe("STEP5", () => {
 
   it("test1", () => {
     const cipher = new CaesarCipher(5);
