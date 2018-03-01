@@ -1,7 +1,7 @@
 import {assert} from 'chai';
 import {CaesarCipher} from '../target/cipher';
 
-describe("Q5 - extra", () => {
+describe("STEP6", () => {
 
   it("test1", () => {
     const cipher = new CaesarCipher(5);
