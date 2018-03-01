@@ -1,7 +1,7 @@
 import {assert} from 'chai';
 import {Person} from '../target/person';
 
-describe("Q2", () => {
+describe("STEP2", () => {
 
   it("test1", () => {
     var ret = new Person("undefined").hello();
