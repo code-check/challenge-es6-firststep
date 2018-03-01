@@ -1,7 +1,7 @@
 import {assert} from 'chai';
 import {Rectangle, Square, Circle} from '../target/polygon';
 
-describe("Q3", () => {
+describe("STEP3", () => {
 
   it("test1", () => {
     const polygon = new Rectangle(5, 10);
